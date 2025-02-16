@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import style from "./Cart.module.css";
 import { cartContext } from "../../Context/CartContext";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   let { getCert, updateCert, deleteCart } = useContext(cartContext);
@@ -120,8 +121,8 @@ export default function Cart() {
               </div>
             ))}
           </div>
-          <div><button className="btn">check</button></div>
-
+                <Link to={"/checkOut"}>          <div><button className="btn">check</button></div>
+                </Link>
         </>
       ) : (
         <h2 className=" text-xl text-center">Empty cart 👍</h2>

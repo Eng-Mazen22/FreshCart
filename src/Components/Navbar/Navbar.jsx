@@ -8,7 +8,7 @@ import { cartContext } from "../../Context/CartContext";
 export default function Navbar() {
   let unNavigate = useNavigate();
   let { UserLogin, setUserLogin } = useContext(UserContext);
- let {setnumber} = useContext(cartContext)
+ let {number} = useContext(cartContext)
  
  
 
@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <ul className=" flex gap-4">
               <Link to={"Cart"}><i class="fa-solid fa-cart-shopping cursor-pointer"></i></Link>
-              <span className=" bg-slate-600">{setnumber}</span>
+              <span className="">{number}</span>
             </ul>
             <ul className=" flex gap-5">
               {UserLogin != null ? (
