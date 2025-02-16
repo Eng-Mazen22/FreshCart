@@ -38,7 +38,7 @@ export default function Navbar() {
               <>
                 <ul className=" flex gap-3">
                   <li>
-                    <Link className=" text-slate-600" to="">
+                    <Link className=" text-slate-600" to="/">
                       Home
                     </Link>
                   </li>
