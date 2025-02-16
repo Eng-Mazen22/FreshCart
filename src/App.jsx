@@ -43,7 +43,7 @@ function App() {
 export default App;
 let x = createBrowserRouter([
   {
-    path: "/",
+    path: "/register",
     element: <Layout />,
     children: [
       {
