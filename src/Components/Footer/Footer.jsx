@@ -9,7 +9,7 @@ export default function Footer() {
       <div><h1>Developer : <span className=' text-black'>Mazen Mohamed</span></h1></div>
 
 
-      <div><h1>My accounts : <Link to={"https://www.linkedin.com/in/mazen-mohamed-0a973b340/"}>LinkedIn</Link> | <Link to={"https://github.com/Eng-Mazen22"}>GetHub</Link>  </h1>
+      <div><h1>My accounts : <Link to={"https://www.linkedin.com/in/mazen-mohamed-0a973b340/"}>LinkedIn</Link> | <Link to={"https://github.com/Eng-Mazen22"}>GitHub</Link>  </h1>
       
       </div>
 
