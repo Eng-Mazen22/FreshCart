@@ -38,32 +38,32 @@ export default function Navbar() {
               <>
                 <ul className=" flex gap-3">
                   <li>
-                    <Link className=" text-slate-600" to="/FreshCart/">
+                    <Link className=" text-slate-600" to="">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/Cart">
+                    <Link className=" text-slate-600" to="Cart">
                       Cart
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/Category">
+                    <Link className=" text-slate-600" to="Category">
                       Category
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/product">
+                    <Link className=" text-slate-600" to="product">
                       Products
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/brand">
+                    <Link className=" text-slate-600" to="brand">
                       Brands
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/WishList">
+                    <Link className=" text-slate-600" to="WishList">
                       Whish List
                     </Link>
                   </li>
