@@ -44,7 +44,7 @@ function App() {
 export default App;
 let x = createBrowserRouter([
   {
-    path: "/",
+    path: "/FreshCart/",
     element: <Layout />,
     children: [
       {
