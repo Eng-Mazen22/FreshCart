@@ -56,7 +56,7 @@ let x = createBrowserRouter([
         ),
       },
       {
-        path: "product",
+        path: "/product",
         element: (
           <ProtectedRoute>
             <Products />
@@ -65,7 +65,7 @@ let x = createBrowserRouter([
        
       },
       {
-        path: "brand",
+        path: "/brand",
         element: (
           <ProtectedRoute>
             <Brands />
@@ -73,7 +73,7 @@ let x = createBrowserRouter([
         ),
       },
       {
-        path: "checkOut",
+        path: "/checkOut",
         element: (
           <ProtectedRoute>
             <CheckOut />
@@ -81,7 +81,7 @@ let x = createBrowserRouter([
         ),
       },
       {
-        path: "WishList",
+        path: "/WishList",
         element: (
           <ProtectedRoute>
             <WishList />
@@ -89,7 +89,7 @@ let x = createBrowserRouter([
         ),
       },
       {
-        path: "category",
+        path: "/category",
         element: (
           <ProtectedRoute>
             <Categories />
@@ -97,18 +97,18 @@ let x = createBrowserRouter([
         ),
       },
       {
-        path: "ProductDetails/:id/:category",
+        path: "/ProductDetails/:id/:category",
         element: (
           <ProtectedRoute>
             <ProductDetails />
           </ProtectedRoute>
         ),
       },
-      { path: "register", element: <Register /> },
-      { path: "login", element: <Login /> },
-      { path: "Forget", element: <Forget /> },
+      { path: "/register", element: <Register /> },
+      { path: "/login", element: <Login /> },
+      { path: "/Forget", element: <Forget /> },
       {
-        path: "cart",
+        path: "/cart",
         element: (
           <ProtectedRoute>
             <Cart />
