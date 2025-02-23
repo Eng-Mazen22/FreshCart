@@ -46,7 +46,7 @@ export default function ProductDetails() {
     <>
       <div className="row items-center">
       
-        <div className="w-1/4">
+        <div className="md:w-1/4 w-1/2 ">
         <Slider {...settings}>
         {ProductDetails?.images.map((src)=><img src={src} className=" w-full"></img>)}
            </Slider> 
@@ -77,7 +77,7 @@ export default function ProductDetails() {
       <div className="row">
         {relateProducts.length > 0 ? (
           relateProducts.map(Product => (
-            <div key={Product.id} className=" w-1/6">
+            <div key={Product.id} className=" md:w-1/6 w-1/2">
               <div className="product p-3">
                 <Link
                   to={`/FreshCart/ProductDetails/${Product.id}/${Product.category.name}`}

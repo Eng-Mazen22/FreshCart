@@ -6,17 +6,17 @@ import { UserContext } from "../../Context/UserContext";
 import { cartContext } from "../../Context/CartContext";
 
 export default function Navbar() {
-  const [hamdi, sethamdi] = useState(false)
+  const [wish, setwish] = useState(false)
   let unNavigate = useNavigate();
   let { UserLogin, setUserLogin } = useContext(UserContext);
  let {number} = useContext(cartContext)
  
- function mazen() {
-  if (hamdi == true) {
-  sethamdi(false)
+ function setWish() {
+  if (wish == true) {
+  setwish(false)
     
   }else{
-  sethamdi(true)
+  setwish(true)
     
   }
  }
@@ -24,7 +24,7 @@ export default function Navbar() {
   function SignOut() {
     localStorage.removeItem("setToken");
     setUserLogin(null);
-    mazen()
+    setWish()
     unNavigate("login");
   }
 
@@ -112,7 +112,7 @@ export default function Navbar() {
         
         <div className="flex md:hidden flex-wrap gap-3 justify-between items-center mx-auto max-w-screen-xl p-4">
         <Link
-        onClick={mazen}
+        onClick={setWish}
               to=""
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
@@ -124,42 +124,42 @@ export default function Navbar() {
               />
       </Link>
       <div className="flex items-center space-x-6 rtl:space-x-reverse">
-      <i class="fa-solid fa-bars text-4xl cursor-pointer"onClick={mazen}></i>
+      <i class="fa-solid fa-bars text-4xl cursor-pointer"onClick={setWish}></i>
      </div>
       </div>
-      <div className={hamdi == true? '':'hidden'}>
+      <div className={wish == true? '':'hidden'}>
         
       <div className=" flex flex-col items-center gap-4">
             {UserLogin != null ? (
               <>
                 <ul className="flex-col text-center flex gap-7">
                   <li>
-                    <Link onClick={mazen} className=" text-slate-600" to="">
+                    <Link onClick={setWish} className=" text-slate-600" to="">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={mazen} className=" text-slate-600" to="Cart">
+                    <Link onClick={setWish} className=" text-slate-600" to="Cart">
                       Cart
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={mazen} className=" text-slate-600" to="Category">
+                    <Link onClick={setWish} className=" text-slate-600" to="Category">
                       Category
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={mazen} className=" text-slate-600" to="product">
+                    <Link onClick={setWish} className=" text-slate-600" to="product">
                       Products
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={mazen} className=" text-slate-600" to="brand">
+                    <Link onClick={setWish} className=" text-slate-600" to="brand">
                       Brands
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={mazen} className=" text-slate-600" to="WishList">
+                    <Link onClick={setWish} className=" text-slate-600" to="WishList">
                       Whish List
                     </Link>
                   </li>
@@ -179,10 +179,10 @@ export default function Navbar() {
                 <ul className="flex-col text-center flex gap-7">
 
                   <li>
-                    <Link onClick={mazen}  to="login">Login</Link>
+                    <Link onClick={setWish}  to="login">Login</Link>
                   </li>
                   <li>
-                    <Link onClick={mazen} to="register">Register</Link>
+                    <Link onClick={setWish} to="register">Register</Link>
                   </li>
                 </ul>
 

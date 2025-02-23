@@ -36,7 +36,7 @@ useEffect(()=>{
           </div>
           <div className="row  flex-col ">
             
-            { whishList?.length >0 ?   whishList?.map(product => (
+          {whishList?.length > 0 ? whishList?.map(product => (
               <div key={product.id}>
                 <div className=" flex mb-4 justify-between   gap-4  border-b-2 ">
                   <div className=" flex ">
@@ -67,7 +67,7 @@ useEffect(()=>{
                   </div>
                 </div>
               </div>
-            )) : <h1 className=' text-emerald-300 text-center'>empty Whish List</h1>}
+            )): <h1 className=' text-emerald-300 text-center'>empty Whish List</h1>}
           </div>
 
    </>
