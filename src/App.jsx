@@ -19,7 +19,7 @@ import { Toaster } from "react-hot-toast";
 import WishList from "./Components/wishList/WishList";
 import WhishListProvider from "./Context/WhishContext";
 import Forget from "./Components/Forget/Forget";
-import CheckOut from './Components/CheckOut/CheckOut';
+import CheckOut from "./Components/CheckOut/CheckOut";
 
 let query = new QueryClient();
 function App() {
@@ -44,7 +44,7 @@ function App() {
 export default App;
 let x = createBrowserRouter([
   {
-    path: "",
+    path: "FreshCart",
     element: <Layout />,
     children: [
       {
@@ -62,7 +62,6 @@ let x = createBrowserRouter([
             <Products />
           </ProtectedRoute>
         ),
-       
       },
       {
         path: "brand",
