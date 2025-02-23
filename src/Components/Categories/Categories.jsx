@@ -24,7 +24,7 @@ export default function Categories() {
     <>
       <div className="row">
         {category.length >0 ?  category.map(Product => (
-          <div className="w-1/3 ">
+          <div className="md:w-1/3 w-1/2 g- ">
             <div
               key={Product.id}
               class="max-w-sm bg-white border my-3 border-gray-200 rounded-lg  hover:shadow-lg hover:shadow-emerald-500 dark:border-gray-700"

@@ -13,6 +13,7 @@ export default function RecentProduct() {
   let { data, isError, error, isLoading } = useProduct();
   let { addProduct } = useContext(cartContext);
   const [loading, setloading] = useState(false);
+  const [heart, setheart] = useState(null)
   const [cartId, setcartId] = useState(0);
   let {getWhish} = useContext(whishContext);
 
@@ -39,6 +40,7 @@ export default function RecentProduct() {
   }
   async function addwhish(id){
  let res =   await getWhish(id)
+ setheart(`${id}`)
  if (res.data.status == "success") {
   toast.success(res.data.message);
 } else {
@@ -52,7 +54,7 @@ export default function RecentProduct() {
     <>
       <div className="row">
         {data?.data?.data.map(Product => (
-          <div key={Product.id} className=" w-1/6 ">
+          <div key={Product.id} className=" md:w-1/6 w-1/2 ">
             <div className="product p-3">
               <Link
                 to={`ProductDetails/${Product.id}/${Product.category.name}`}
@@ -73,7 +75,7 @@ export default function RecentProduct() {
               </Link>
               <span>
                     <button 
-         onClick={()=>addwhish(Product.id)}> <i className="fa-solid fa-heart text-2xl"></i>   </button>
+         onClick={()=>addwhish(Product.id)}> <i className={heart == `${Product.id}`? "fa-solid text-red-600 fa-heart text-2xl":"fa-regular text-red-600 fa-heart text-2xl"}></i>   </button>
                   </span>
               <button onClick={() => ResentCart(Product.id)} className=" btn ">
                 {loading && cartId == Product.id ? (
