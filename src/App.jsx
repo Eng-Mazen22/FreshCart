@@ -114,7 +114,7 @@ let x = createBrowserRouter([
           </ProtectedRoute>
         ),
       },
-      { path: "FreshCart/*", element: <Notfound /> },
+      // { path: "FreshCart/*", element: <Notfound /> },
     ],
   },
 ]);
