@@ -22,7 +22,7 @@ export default function Register() {
         if (res.data.message == "success") {
          localStorage.setItem("setToken" , res.data.token)
          setUserLogin( res.data.token)
-         navigate("/")
+         navigate("")
           
           
         }
@@ -216,7 +216,7 @@ export default function Register() {
         >
           {IsLoading ? <i className="fas fa-spinner fa-spin"></i> : "register"}
         </button>
-       <Link to={"/login"}><span className=" text-blue-400 underline"> your account login now</span></Link>
+       <Link to={"/FreshCart/login"}><span className=" text-blue-400 underline"> your account login now</span></Link>
        </div>
       </form>
     </>

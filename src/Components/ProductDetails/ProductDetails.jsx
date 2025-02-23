@@ -80,7 +80,7 @@ export default function ProductDetails() {
             <div key={Product.id} className=" w-1/6">
               <div className="product p-3">
                 <Link
-                  to={`ProductDetails/${Product.id}/${Product.category.name}`}
+                  to={`/FreshCart/ProductDetails/${Product.id}/${Product.category.name}`}
                 >
                   <img src={Product.imageCover} className=" w-full" alt="" />
                   <h3 className="  text-green-600">{Product.category.name}</h3>

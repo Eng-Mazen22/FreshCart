@@ -13,7 +13,7 @@ export default function Forget() {
    await axios.post(`https://ecommerce.routemisr.com/api/v1/auth/forgotPasswords`,email )
       .then(response => {
         console.log(response);
-        navigate("/login")
+        navigate("/FreshCart/login")
         setUserLogin(res.data.token)
       })
       

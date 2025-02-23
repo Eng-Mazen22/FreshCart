@@ -121,7 +121,7 @@ export default function Cart() {
               </div>
             ))}
           </div>
-                <Link to={"/checkOut"}>          <div><button className="btn">check</button></div>
+                <Link to={"checkOut"}>          <div><button className="btn">check</button></div>
                 </Link>
         </>
       ) : (

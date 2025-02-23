@@ -15,7 +15,7 @@ export default function Navbar() {
   function SignOut() {
     localStorage.removeItem("setToken");
     setUserLogin(null);
-    unNavigate("/login");
+    unNavigate("login");
   }
 
   return (
@@ -38,32 +38,32 @@ export default function Navbar() {
               <>
                 <ul className=" flex gap-3">
                   <li>
-                    <Link className=" text-slate-600" to="/">
+                    <Link className=" text-slate-600" to="">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/Cart">
+                    <Link className=" text-slate-600" to="Cart">
                       Cart
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/Category">
+                    <Link className=" text-slate-600" to="Category">
                       Category
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/product">
+                    <Link className=" text-slate-600" to="product">
                       Products
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/brand">
+                    <Link className=" text-slate-600" to="brand">
                       Brands
                     </Link>
                   </li>
                   <li>
-                    <Link className=" text-slate-600" to="/WishList">
+                    <Link className=" text-slate-600" to="WishList">
                       Whish List
                     </Link>
                   </li>
@@ -87,10 +87,10 @@ export default function Navbar() {
               ) : (
                 <>
                   <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="login">Login</Link>
                   </li>
                   <li>
-                    <Link to="/register">Register</Link>
+                    <Link to="register">Register</Link>
                   </li>
                 </>
               )}

@@ -21,7 +21,7 @@ export default function Login() {
         if (res.data.message == "success") {
          localStorage.setItem("setToken" , res.data.token)
          setUserLogin(res.data.token)
-         navigate("/")
+         navigate("/FreshCart")
           
           
         }
@@ -129,8 +129,8 @@ export default function Login() {
         >
           {IsLoading ? <i className="fas fa-spinner fa-spin"></i> : "register"}
         </button>
-       <Link to={"/register"}><span className=" text-blue-400 underline"> New account</span></Link>
-       <Link to={"/Forget"}><span className=" text-blue-400 underline"> Forget Password</span></Link>
+       <Link to={"/FreshCart/register"}><span className=" text-blue-400 underline"> New account</span></Link>
+       <Link to={"/FreshCart/Forget"}><span className=" text-blue-400 underline"> Forget Password</span></Link>
        </div>
       </form>
     </>
